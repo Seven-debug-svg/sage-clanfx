@@ -218,7 +218,7 @@ document.getElementById("results").innerHTML=RESULTS.map(r=>`<div><span>${esc(r[
 document.getElementById("planning").innerHTML=PLANNING.map(r=>`<div><span>${esc(r[1])}</span><small>${esc(r[0])}</small></div>`).join("");
 document.querySelectorAll("[data-link]").forEach(a=>{a.href=LINKS[a.dataset.link]||"#"});
 
-const APPS_URL="";/* Collez ici l’URL de votre script Google (voir le guide) */
+const APPS_URL="https://script.google.com/macros/s/AKfycbzj62AGVlkZ_2n8zAW_l6KyX_ftWSvYf7lwXJZWBFkQ6oZnHA2polRuhCdPTCwTtYyCyQ/exec";/* Collez ici l’URL de votre script Google (voir le guide) */
 const form=document.getElementById("apply"),ok=document.getElementById("ok"),err=document.getElementById("err");
 const fields=()=>[...form.elements].filter(x=>x.name&&x.name!=="hp");
 form.addEventListener("submit",async e=>{
