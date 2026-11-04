@@ -195,15 +195,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 /* Les liens se modifient ici. Le roster se gère depuis le panneau propriétaire (bouton visible uniquement par vous). */
 const LINKS={discord:"#",twitch:"#",youtube:"#",x:"#"};
 const ROSTER_SEED=[
-{pseudo:"Sage",role:"Fondateur",rang:"—",plateforme:"PC",statut:"Direction",bio:"Fonde et dirige l’organisation. Responsable de la vision du clan."},
-{pseudo:"Nova",role:"Manager",rang:"—",plateforme:"PC",statut:"Staff",bio:"Gère le planning, les recrutements et le suivi des joueurs."},
-{pseudo:"Atlas",role:"Coach",rang:"Elite",plateforme:"PC",statut:"Coach",bio:"Prépare les stratégies et analyse chaque match."},
-{pseudo:"Vex",role:"Entry",rang:"Diamant",plateforme:"PC",statut:"Titulaire",bio:"Ouvre les actions avec précision et sang-froid."},
-{pseudo:"Kairo",role:"Support",rang:"Diamant",plateforme:"PC",statut:"Titulaire",bio:"Pilier de la communication en jeu."},
-{pseudo:"Rune",role:"Flex",rang:"Platine",plateforme:"PC",statut:"Remplaçant",bio:"Polyvalent, prêt à entrer sur n’importe quel poste."}
+{pseudo:"Seven",role:"Leader,Leader FS,Leader CCH",rang:"Grand Champion",plateforme:"PC",statut:"Lead",bio:No more yet."},
+{pseudo:"Rush",role:"Freestyler",rang:"Gold",plateforme:"PC",statut:"Member",bio:},
+{pseudo:"K",role:"Freestyler",rang:"Diamond",plateforme:"PC",statut:"Member",bio:},
 ];
-const RESULTS=[["Sage Clan 2 – 0 Orion","Victoire","Scrim"],["Sage Clan 1 – 2 Helix","Défaite","Tournoi"],["Sage Clan 2 – 1 Zenith","Victoire","Ligue"]];
-const PLANNING=[["Samedi 21:00","Scrim vs Apex"],["Dimanche 20:30","Ligue, journée 4"],["Mercredi 21:00","Entraînement interne"]];
+const RESULTS=[[;
+const PLANNING=[[;
 
 let ROSTER;try{ROSTER=JSON.parse(document.getElementById("roster-data").textContent)||ROSTER_SEED}catch(x){ROSTER=ROSTER_SEED}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
